@@ -98,7 +98,7 @@ jobs:
 
       - name: Build Kernel
         run: |
-          sed -i 's|TOOLCHAIN_PATH=\$HOME/toolchain/proton-clang/bin|TOOLCHAIN_PATH=$(pwd)/proton-clang-20210522/bin|' build.sh
+          sed -i 's|TOOLCHAIN_PATH=$HOME/toolchain/proton-clang/bin|TOOLCHAIN_PATH=$(pwd)/proton-clang-20210522/bin|' build.sh
 
           DEVICE="${{ github.event.inputs.target_device }}"
           SYSTEM="${{ github.event.inputs.system_version }}"
