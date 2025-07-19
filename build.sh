@@ -151,8 +151,8 @@ echo "Clone AnyKernel3 for packing kernel (repo: https://github.com/liyafe1997/A
 git clone https://github.com/liyafe1997/AnyKernel3 -b kona --single-branch --depth=1 anykernel
 
 # Add date to local version
-local_version_str="-perf"
-local_version_date_str="-$(date +%Y%m%d)-${GIT_COMMIT_ID}-perf"
+local_version_str="-CLC"
+local_version_date_str="-SKU-S-K-$(date +%Y%m%d)-${GIT_COMMIT_ID}"
 
 sed -i "s/${local_version_str}/${local_version_date_str}/g" arch/arm64/configs/${TARGET_DEVICE}_defconfig
 
