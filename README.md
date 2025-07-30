@@ -1,5 +1,4 @@
 # About this repo
-English | [中文](README_CN.md)
 
 This repo (`android14-lineage22-mod` branch) is based on [Lineage OS 22 xiaomi sm8250 kernel source](https://github.com/LineageOS/android_kernel_xiaomi_sm8250).
 
